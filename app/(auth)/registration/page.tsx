@@ -4,10 +4,11 @@ import Image from "next/image";
 import Form from "next/form";
 import { FormState, createUser,  } from "./action";
 import { useActionState } from "react";
-const initialState : FormState = { message : "", error : ""};
+import { useFormState } from "react-dom";
+const initialState: FormState = { message: null, error: null };
 
 export default  function Home() {
-  const[state,formAction] =  useActionState( createUser ,initialState );
+  const[state,formAction] =  useFormState( createUser ,initialState );
   return (
     <div className="bg-violet-200 grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-2 sm:p-2 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
