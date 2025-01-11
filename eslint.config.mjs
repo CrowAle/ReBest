@@ -10,11 +10,7 @@ const compat = new FlatCompat({
 })
 
 const eslintConfig = [
-  ...compat.rules({
-    rules: {
-      "@next/next/no-html-link-for-pages": "off",
-    },
-  }),
+  ...compat.rules({}),
   ...compat.config({
     extends: ["next"],
     rules: {

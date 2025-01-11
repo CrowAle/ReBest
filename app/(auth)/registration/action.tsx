@@ -1,13 +1,12 @@
 'use server';
 
 import { createClient } from "@/app/utils/supabase/server";
-import { headers } from "next/headers";
-import { redirect } from "next/navigation";
 export type FormState = {
     message : string;
     error : string;
 }
-export async function createUser (prevstate : FormState, formData : FormData) {
+
+export async function createUser (prevstate : FormState, formData : FormData) { 
     const username  = (formData.get('username') as string) || '';
     const password   = (formData.get('password') as string) || '';
     const confirmpassword = formData.get('confirm-password');
