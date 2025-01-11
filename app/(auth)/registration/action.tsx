@@ -8,19 +8,19 @@ export type FormState = {
     error : string;
 }
 export async function createUser (prevstate : FormState, formData : FormData) {
-    const username  = formData.get('username');
-    const password   = formData.get('password');
+    const username  = (formData.get('username') as string) || '';
+    const password   = (formData.get('password') as string) || '';
     const confirmpassword = formData.get('confirm-password');
  
     if (!password || password != confirmpassword || !username) {
         return {error : "Password should be the same as the confirm password and username is required"}
     }
     const supabaseClient = await createClient();
-   const dataa = { email: username,
+   const d   = { email: username,
     password:password }
     
     
-const {  data,error } = await supabaseClient.auth.signUp(dataa)
+const {  data,error } = await supabaseClient.auth.signUp( d )   ;
  if(error){
     return {error : "Registrazione fallita" + error.message}
  } 
