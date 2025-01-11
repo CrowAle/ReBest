@@ -2,8 +2,8 @@
 
 import { createClient } from "@/app/utils/supabase/server";
 export type FormState = {
-    message : string;
-    error : string;
+    message : string | null ;
+    error : string | null ;
 }
 
 export async function createUser (prevstate : FormState, formData : FormData) { 

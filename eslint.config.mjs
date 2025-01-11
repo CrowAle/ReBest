@@ -10,7 +10,6 @@ const compat = new FlatCompat({
 })
 
 const eslintConfig = [
-  ...compat.rules({}),
   ...compat.config({
     extends: ["next"],
     rules: {
