@@ -12,8 +12,8 @@ export async function createUser (prevstate : FormState, formData : FormData) {
     const password   = formData.get('password');
     const confirmpassword = formData.get('confirm-password');
  
-    if (!password || password != confirmpassword) {
-        return {error : "Password should be the same as the confirm password"}
+    if (!password || password != confirmpassword || !username) {
+        return {error : "Password should be the same as the confirm password and username is required"}
     }
     const supabaseClient = await createClient();
    const dataa = { email: username,
