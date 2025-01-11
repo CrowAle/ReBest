@@ -11,8 +11,9 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.rules({
-    "@typescript-eslint/no-unused-vars": "off",
-    // ... altre tue regole ...
+    rules: {
+      "@next/next/no-html-link-for-pages": "off",
+    },
   }),
   ...compat.config({
     extends: ["next"],

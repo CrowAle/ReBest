@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Footer from "./components/layout/footer";
+
  
 
 
