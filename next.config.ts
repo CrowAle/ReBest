@@ -1,10 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
-const nextConfig: NextConfig = {
-  /* config options here */
-experimental: {
-  serverActions: true,
-},
-};
+const config: NextConfig = {
+  experimental: {
+    serverActions: {
+      allowedOrigins: ["*"],  // o specificare domini precisi
+      bodySizeLimit: "2mb"    // o il limite che preferisci
+    }
+  }
+}
 
-export default nextConfig;
+export default config
