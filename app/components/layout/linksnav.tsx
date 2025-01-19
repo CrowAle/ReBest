@@ -43,11 +43,12 @@ const Linksnav = () => {
     <div className=" align-items-center text-center" >
       { rlinks.map(( linka ) => 
         (
-          
+          <span className='hover:text-violet-600'>
         <Link key={linka.id} href={linka.url} >
-          {linka.text} &nbsp; &nbsp; &nbsp; &nbsp;   
-        </Link>
-          
+          {linka.text}    
+        </Link> &nbsp; &nbsp; &nbsp; &nbsp;
+        </span>
+        
       ))}
       </div>
     );

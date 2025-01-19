@@ -14,8 +14,8 @@ export default function Home() {
      <div className=" min-h-80 bg-contain bg-no-repeat bg-auto  bg-center bg-blue-500 h-32 w-full row-start-1" style={{ 
       backgroundImage: `url('/casa2.jpeg')` 
     }} > </div>
-  <div className=" bg-contain bg-green-500 h-full row-start-2">Cella 2</div>
-  <div className="bg-yellow-500 h-full">Cella 3</div>
+  <div className=" bg-contain bg-green-500 h-full row-start-2"></div>
+  <div className="bg-yellow-500 h-full"></div>
      
     </div>
     </div>
