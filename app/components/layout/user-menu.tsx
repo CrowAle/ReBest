@@ -24,7 +24,8 @@ const UserMenu = ( { user } : UserMenuProps) => {
       router.refresh();
     }
   }
-    return (<DropdownMenu>
+    return (<div className="justify-center content-center">
+    <DropdownMenu>
     <DropdownMenuTrigger><Image src="/avatar.svg" alt="Logout" width={40} height={40} /></DropdownMenuTrigger>
     <DropdownMenuContent>
       <DropdownMenuLabel>My Account</DropdownMenuLabel>
@@ -34,7 +35,7 @@ const UserMenu = ( { user } : UserMenuProps) => {
       <DropdownMenuItem>Team</DropdownMenuItem>
       <DropdownMenuItem onClick={logout}>Logout</DropdownMenuItem>
     </DropdownMenuContent>
-  </DropdownMenu>)
+  </DropdownMenu></div>)
   
 };
 
