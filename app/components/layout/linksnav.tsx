@@ -40,14 +40,14 @@ const Linksnav = () => {
  
     
     return ( 
-    <div className=" align-items-center text-center" >
-      { rlinks.map(( linka ) => 
+      <div className={`flex flex-wrap gap-8 w-full justify-center `} > 
+      { rlinks.map(( linka , index) => 
         (
-          <span className='hover:text-violet-600'>
+          <div key={linka.id} className= {`hover:text-violet-600 p-1  w-1/${rlinks.length}`}>
         <Link key={linka.id} href={linka.url} >
           {linka.text}    
-        </Link> &nbsp; &nbsp; &nbsp; &nbsp;
-        </span>
+        </Link> 
+        </div>
         
       ))}
       </div>

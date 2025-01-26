@@ -21,9 +21,9 @@ async function Navbar() {
      */
    
     return (
-    <div className=" bg-gray-100 grid  md:grid-cols-[1fr_8fr_1fr] sm:grid-cols-[1fr_8fr_1fr] h-30 md:h-35 w-full content-center pt-4" >
+    <div className=" bg-gray-100 grid  md:grid-cols-[1fr_5fr_1fr] sm:grid-cols-[1fr_8fr_1fr] h-30 md:h-35 w-full content-center pt-4 border-b-8 border-gray-200 " >
         <div className="justify-center content-center"><Logo  /></div>
-        <div className=" grid  sm:grid-cols-1 md:grid-cols-1 content-center justify-center">
+        <div className=" grid  sm:grid-cols-1 md:grid-cols-1 content-center justify-center pt-4 pb-4">
             <div className="sm:col-start-1 md:col-start-1 justify-items-center content-center font-bold text-sm"> <Linksnav/></div>  </div>
         <div className="justify-items-center content-center"> 
             

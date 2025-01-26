@@ -9,14 +9,14 @@ const Logo = () => {
                   className="items-center"
                   href="/"
                   target="_blank"
-                  rel="immobiliare"
+                  rel="immobiliare"   
                 >
                   <Image
                     aria-hidden
-                    src="/logo.svg"
+                    src="/SoloLogoff00ffbicolor.svg"
                     alt="File icon"
-                    width={60}
-                    height={60}
+                    width={50}
+                    height={50}
                   />
                 
                 </a>
