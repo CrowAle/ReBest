@@ -96,13 +96,19 @@ const Footer = () => {
                     </h2>
                     <nav className="mb-10 list-none">
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Terms &amp; Privacy</a>
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova6">Terms &amp; Privacy</a>
                         </li>
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">Pricing</a>
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova7">Pricing</a>
                         </li>
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900">FAQ</a>
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova8">FAQ</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova9">FAQ</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova10">FAQ</a>
                         </li>
                     </nav>
                 </div>
