@@ -105,11 +105,42 @@ const Footer = () => {
                             <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova8">FAQ</a>
                         </li>
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova9">FAQ</a>
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova9">9</a>
                         </li>
                         <li className="mt-3">
-                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova10">FAQ</a>
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova10">10</a>
                         </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova11">11</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova12">12</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova13">13</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova14">14</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova15">15</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova16">16</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova17">17</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova18">18</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova19">19</a>
+                        </li>
+                        <li className="mt-3">
+                            <a className="text-gray-500 cursor-pointer hover:text-gray-900" href="/prova20">20</a>
+                        </li>
+                        
                     </nav>
                 </div>
                 <div className="w-full px-4 lg:w-1/4 md:w-1/2">
