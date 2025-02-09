@@ -44,7 +44,7 @@ const OSMMapComponent: React.FC<OSMMapComponentProps> = ({ locations }) => {
       />
       {locations.map((location, index) => (
         <Marker key={index} position={[location.lat, location.lng]}>
-          <Popup>{location.address}</Popup>
+          <Popup><a href={`https://www.google.com/maps/search/?api=1&query=${location.address}`} target="_blank">{location.address}</a></Popup>
         </Marker>
       ))}
     </MapContainer>

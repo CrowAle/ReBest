@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
         'Colosseo, Roma',
         'Foro Romano, Roma',
         'Basilica di San Pietro, Città del Vaticano',
-        'via bonino 24, pralungo',
+        'via bonino 24, Pralungo',
         'dubai',
         'bangkok',
       ];
