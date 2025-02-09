@@ -8,7 +8,7 @@ const OSMMapComponent = dynamic(() => import('@/app/components/OSMMapComponent')
 });
 
 const HomePage: React.FC = () => {
-  const [locations, setLocations] = useState<{ lat: number | 0 ; lng: number | 0; address: string }[]>([]);
+  const [locations, setLocations] = useState<{ lat: number; lng: number; address: string }[]>([]);
 
   useEffect(() => {
     const fetchCoordinates = async () => {
@@ -24,11 +24,16 @@ const HomePage: React.FC = () => {
       const locationsWithCoords = await Promise.all(
         addresses.map(async (address) => {
           const coords = await geocodeAddress(address);
-          return { ...coords,  address };
+          return { ...coords, address };
         })
       );
 
-      setLocations( locationsWithCoords.filter((loc : { lat: number | 0 ; lng: number | 0 }) => loc.lat  && loc.lng ));
+      // Filter out locations where lat or lng is missing or 0
+      const filteredLocations = locationsWithCoords.filter(
+        (loc) => loc.lat !== 0 && loc.lng !== 0 
+      );
+
+      setLocations(filteredLocations);
     };
 
     fetchCoordinates();
