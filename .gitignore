@@ -43,6 +43,6 @@ next-env.d.ts
 app/gioco/
 app/gioco1/
 app/gioco2/
-app/(prove)/gioco3/
+app/prove/gioco3/
 app/backups/
 DaFare.txt
