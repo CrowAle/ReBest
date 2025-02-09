@@ -30,7 +30,7 @@ interface OSMMapComponentProps {
 }
 
 const OSMMapComponent: React.FC<OSMMapComponentProps> = ({ locations }) => {
-  const center: [number, number] = [41.9028, 12.4964]; // Centrato su Roma, Italia
+  const center: [number | 0, number | 0] = [41.9028, 12.4964]; // Centrato su Roma, Italia
 
   return (
     <MapContainer
@@ -43,7 +43,7 @@ const OSMMapComponent: React.FC<OSMMapComponentProps> = ({ locations }) => {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
       {locations.map((location, index) => (
-        <Marker key={index} position={[location.lat, location.lng]}>
+        <Marker key={index} position={[location.lat  || 0, location.lng || 0]}>
           <Popup><a href={`https://www.google.com/maps/search/?api=1&query=${location.address}`} target="_blank">{location.address}</a></Popup>
         </Marker>
       ))}

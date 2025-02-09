@@ -28,7 +28,7 @@ const HomePage: React.FC = () => {
         })
       );
 
-      setLocations(locationsWithCoords.filter((loc): number | undefined => loc.lat   && loc.lng));
+      setLocations(locationsWithCoords.filter((loc): number | 0 => loc.lat   && loc.lng));
     };
 
     fetchCoordinates();
