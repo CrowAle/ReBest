@@ -24,11 +24,11 @@ const HomePage: React.FC = () => {
       const locationsWithCoords = await Promise.all(
         addresses.map(async (address) => {
           const coords = await geocodeAddress(address);
-          return { ...coords, address };
+          return { ...coords,  address };
         })
       );
 
-      setLocations(locationsWithCoords.filter((loc): number | 0 => loc.lat   && loc.lng));
+      setLocations( locationsWithCoords.filter((loc : { lat: number | 0 ; lng: number | 0 }) => loc.lat  && loc.lng ));
     };
 
     fetchCoordinates();
