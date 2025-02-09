@@ -8,7 +8,7 @@ const OSMMapComponent = dynamic(() => import('@/app/components/OSMMapComponent')
 });
 
 const HomePage: React.FC = () => {
-  const [locations, setLocations] = useState<{ lat: number; lng: number; address: string }[]>([]);
+  const [locations, setLocations] = useState<{ lat: number | 0 ; lng: number | 0; address: string }[]>([]);
 
   useEffect(() => {
     const fetchCoordinates = async () => {
@@ -28,7 +28,7 @@ const HomePage: React.FC = () => {
         })
       );
 
-      setLocations(locationsWithCoords.filter((loc) => loc.lat && loc.lng));
+      setLocations(locationsWithCoords.filter((loc): number | undefined => loc.lat   && loc.lng));
     };
 
     fetchCoordinates();
